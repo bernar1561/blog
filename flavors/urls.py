@@ -17,7 +17,7 @@ sitemaps = {
 
 urlpatterns = [
     url(r'^$', IndexView.as_view(), name='home'),
-    url(r'^/send/$', flavor_detail, name='send_telegram'),
+    url(r'^send/$', flavor_detail, name='send_telegram'),
     url(r'^thanks/', thanks, name='thanks'),
     url(r'^flavor/(?P<flavor_id>[0-9]+)/$', flavor_detail1, name='flor'),
     url(r'^sitemap\.xml$', sitemap,

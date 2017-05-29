@@ -7,7 +7,7 @@ from django.shortcuts import redirect
 
 # Register your models here.
 class AlbumAdmin(admin.ModelAdmin):
-    pass
+    prepopulated_fields = {'slug': ('title',)}
 
 
 class PhotoAdminForm(forms.ModelForm):
